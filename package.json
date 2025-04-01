@@ -87,7 +87,7 @@
   },
   "scripts": {
     "dev": "parcel index.html product.html",
-    "build": "parcel build index.html product-info.ts"
+    "build": "parcel build index.html product.html"
   },
   "author": "",
   "license": "ISC"
