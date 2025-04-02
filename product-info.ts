@@ -24,13 +24,13 @@ console.log(productId);
 // console.log(productImage.src);
 
 
-ProductDetails.map((item: Product) => {
-    console.log(item);
-    
-    if(item.id === productId) {
-        productName.textContent = item.name;
-        productPrice.textContent = `₹ ${item.price}`;
-        productDescription.textContent = item.description;
-        productImage.src = item.imgUrl;
-    }
+const findProduct: Product = ProductDetails.map((item: Product) => {
+    return item.id === productId
 })
+
+if(findProduct) {
+    productName.textContent = findProduct.name;
+    productPrice.textContent = `₹ ${findProduct.price}`;
+    productDescription.textContent = findProduct.description;
+    productImage.src = findProduct.imgUrl;
+}
